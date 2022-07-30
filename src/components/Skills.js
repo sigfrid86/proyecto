@@ -4,7 +4,7 @@ import SkillCard from "./SkillCard"
 const Skills = props => {
   return(
     <Wrap>
-      <h4>My Skills</h4>
+      <h2>My Skills</h2>
       <SkillGrid>
         {skillsData.map(skill => {
           return <SkillCard key={skill.name} {...skill}/>
@@ -19,7 +19,7 @@ const Wrap = styled.section`
   padding: 50px 10% ;
   color: #fff;
   min-height: 650px;
-  h4{
+  h2{
     text-align:center ;
     margin-bottom: 50px;
     font-size: 2.5rem;
