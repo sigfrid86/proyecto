@@ -2,6 +2,7 @@ import styled from "styled-components"
 import { Link } from "react-router-dom"
 const WorkCard = props => {
   const { entry } = props
+  console.log(entry)
   return(
     <Wrap>
       <Image>
@@ -17,7 +18,7 @@ const WorkCard = props => {
           {entry.fields.extract}
         </Excerpt>
         <ReadMore>
-          <Link to={`/entrada/${entry.fields.slug}`}> Read more </Link>
+          <Link to={`/entrada/${entry.sys.id}`}> Read more </Link>
         </ReadMore>
       </Data>
 
