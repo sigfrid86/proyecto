@@ -2,11 +2,10 @@ import styled from "styled-components"
 import { Link } from "react-router-dom"
 const WorkCard = props => {
   const { entry } = props
-  console.log(entry, 'Esta es la info dentro de una workcard')
   return(
     <Wrap>
       <Image>
-        <img src={entry.fields.thumbnail.fields.file.url} alt={entry.fields.title}/>
+        <img src={entry?.fields?.thumbnail.fields.file.url} alt={entry.fields.title}/>
       </Image>
       <Data>
         <Date>
@@ -18,7 +17,7 @@ const WorkCard = props => {
           {entry.fields.extract}
         </Excerpt>
         <ReadMore>
-          <Link to="/hdsjkadhk"> Read more </Link>
+          <Link to={`/entrada/${entry.fields.slug}`}> Read more </Link>
         </ReadMore>
       </Data>
 

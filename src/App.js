@@ -12,7 +12,7 @@ function App() {
       <Routes>
         <Route path="/" index element={<Home />} />
         <Route path="/categoria" element={<Category />} />
-        <Route path="/entrada" element={<Single />} />
+        <Route path="/entrada/:id" element={<Single />} />
       </Routes>
     </BrowserRouter>
   );

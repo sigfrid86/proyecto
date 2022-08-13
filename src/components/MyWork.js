@@ -14,12 +14,10 @@ const MyWork = () => {
   const [data, setData] = useState([])
   useEffect(()=>{
     console.log('Estoy iniciando mi compoinente')
-    client.getEntries({limit:3})
+    client.getEntries({limit:3,  content_type: 'jobPortfolio'})
       .then(entries => {
-        console.log('ya recibi la info de la api')
         setData(entries.items)
         setIsLoading(false)
-        console.log('ya se guardo')
       })
       .catch(err=>{
         console.log(err)
@@ -37,7 +35,7 @@ const MyWork = () => {
           </> 
         }
         {!isLoading && 
-          data.map(entry=>{
+          data.map((entry,index)=>{
             return(<WorkCard key={entry.sys.id} entry={entry} />)
           })
         }
