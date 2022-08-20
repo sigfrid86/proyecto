@@ -1,6 +1,5 @@
 import styled from "styled-components";
 const Job = props => {
-  console.log(props);
   return(<>
     <Banner url={props.thumbnail.fields.file.url} />
     <Wrap>

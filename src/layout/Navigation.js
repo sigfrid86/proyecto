@@ -3,8 +3,11 @@ import { Link } from "react-router-dom"
 const Navigation = props => {
   return(
     <Nav>
-      <Link to="/">Home</Link>
-      <Link to="/categoria/diseno">Diseño</Link>
+      <Link to="/">HOME</Link>
+      <Link to="/categoria/uiDesign">UI DESIGN</Link>
+      <Link to="/categoria/uxDesign">UX DESIGN</Link>
+      <Link to="/categoria/webDesigner">WEB DESIGNER</Link>
+      <Link to="/categoria/layoutWebsite">LAYOUT</Link>
     </Nav>
   )
 }
