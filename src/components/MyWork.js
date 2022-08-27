@@ -13,7 +13,6 @@ const MyWork = () => {
   const [isLoading , setIsLoading] = useState(true);
   const [data, setData] = useState([])
   useEffect(()=>{
-    console.log('Estoy iniciando mi compoinente')
     client.getEntries({limit:3,  content_type: 'jobPortfolio'})
       .then(entries => {
         setData(entries.items)

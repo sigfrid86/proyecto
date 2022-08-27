@@ -2,7 +2,6 @@ import styled from "styled-components"
 import { Link } from "react-router-dom"
 const WorkCard = props => {
   const { entry } = props
-  console.log(entry)
   return(
     <Wrap>
       <Image>
