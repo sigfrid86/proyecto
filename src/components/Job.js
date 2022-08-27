@@ -17,6 +17,10 @@ const Banner = styled.div`
   background-position:center ;
   background-repeat:no-repeat ;
   background-attachment: fixed ;
+  @media screen and (max-width: 768px) {
+    background-attachment: scroll ;
+    min-height:600px ;
+  }
 `
 const Wrap = styled.div`
   padding:2em 5% ;

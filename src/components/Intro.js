@@ -29,6 +29,19 @@ const Name = styled.div`
     height:15px ;
     margin-top:20px ;
     background-color: #ffae28;
+    @media screen and (max-width: 768px) {
+      width: 100% ;
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    font-size:80px ;
+  }
+  @media screen and (max-width: 768px) {
+    text-align:center ;
+    margin-top:50px ;
+  }
+  @media screen and (max-width: 480px) {
+    font-size:50px ;
   }
 `
 const Content = styled.div`
@@ -41,6 +54,15 @@ const Content = styled.div`
   p{
     font-size:20px ;
   }
+  @media screen and (max-width: 1200px) {
+    padding-left:25% ;
+  }
+  @media screen and (max-width: 768px) {
+    text-align:center ;
+    padding:0 ;
+    margin-top:50px ;
+  }
+  
 `
 const Wrap = styled.section`
   background-color: #323444;
@@ -55,5 +77,14 @@ const Wrap = styled.section`
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 100px;
+  @media screen and (max-width: 1024px) {
+    gap: 50px;
+    padding: 50px 5% ;
+  }
+  @media screen and (max-width: 768px) {
+    display: block;
+    background-size: 300px 480px;
+    background-position: 40% 160%;
+  }
 `
 export default Intro

@@ -20,7 +20,32 @@ const Head = styled.header`
   color:#FFF;
   display: flex ;
   align-items:center ;
-  justify-content:space-between ;
+  justify-content:space-between;
+
+  @media screen and (max-width: 1200px) {
+    border-top: 2px solid red!important;
+  }
+
+  @media screen and (max-width: 1024px) {
+    border-top: 2px solid green!important;
+  }
+
+  @media screen and (max-width: 768px) {
+    border-top: 2px solid blue!important;
+  }
+
+  @media screen and (max-width: 600px) {
+    border-top: 2px solid cyan!important;
+  }
+
+  @media screen and (max-width: 480px) {
+    border-top: 2px solid magenta!important;
+  }
+
+  @media screen and (max-width: 320px) {
+    background: yellow!important;
+  }
+
 `
 const Ghots = styled.div`
   width:100% ;
@@ -32,4 +57,5 @@ const Logo = styled.div`
     margin-bottom:0 ;
   }
 `
+
 export default Header;

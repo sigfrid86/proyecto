@@ -97,6 +97,9 @@ const Grid = styled.div`
   grid-template-columns: repeat(${props=>props.count}, 1fr);
   gap:20px;
   margin:20px 0;
+  @media screen and (max-width: 768px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 `
 const Input = styled.div`
   label{

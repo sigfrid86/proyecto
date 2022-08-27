@@ -21,6 +21,12 @@ const Wrap = styled.div`
   p{
     text-align:right ;
   }
+  @media screen and (max-width: 768px) {
+    h5{
+      text-align:center ;
+      padding-top:20px ;
+    }
+  }
 `
 const Loader = styled.div`
   width:100% ;
@@ -46,5 +52,8 @@ const Icon = styled.div`
   background-color:${props => props.color};
   right:-15px ;
   top:-15px ;
+  @media screen and (max-width: 768px) {
+    right:calc(50% - 15px);
+  }
 `
 export default SkillCard;
