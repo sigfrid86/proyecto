@@ -3,7 +3,7 @@ const Intro = props => {
   return(
     <Wrap>
       <Name>
-        <h1>Miguel <span>Rivera.</span></h1>
+        <h1>Miguel Angel <span>Rivera.</span></h1>
       </Name>
       <Content>
         <h2>Fullstack developer</h2>
@@ -66,7 +66,7 @@ const Content = styled.div`
 `
 const Wrap = styled.section`
   background-color: #323444;
-  background-image: url(./img/henry.png);
+  background-image: url(/img/henry.png);
   background-size: 460px 680px;
   background-repeat: no-repeat;
   background-position: 40% 100%;
